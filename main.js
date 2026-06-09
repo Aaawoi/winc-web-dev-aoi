@@ -1,19 +1,20 @@
-const word = () => {
-    console.log('hello world')
-}
-word()
-
-const userName = document.querySelector("#user-Name");
-const skillslist = document.querySelector("#skills-list");
-
-console.log(userName);
-console.log(skillslist);
-
-userName.textContent = "齊藤　碧海";
-skillslist.textContent = "HTML,CSS, JavaScript","カメラ";
-skills.forEach(skill =>{
-    const item = document.createElement("div");
-    TimeRanges.textContent = skill;
-    skillslist.appendChild(item);
-
+const themebtn = document.querySelector("#theme-button");
+themebtn.addEventListener("click",() =>{
+    console.log("テーマボタンが押されました");
+    document.body.classList.toggle("dark-mode")
 })
+
+
+const colorbtn = document.querySelector("#color-btn");
+const nameTag = document.querySelector("h1");
+
+colorbtn.addEventListener("click",() =>{
+    console.log("色ボタンが押されました");
+    nameTag.style.color = "hotpink";
+});
+
+BigInt.addEventListener("click",()=> {
+    document.body.classList.toggle("dark-mode");
+});
+
+const 
